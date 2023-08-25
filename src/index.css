@@ -1,0 +1,12 @@
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  color-scheme: var(--ifm-color-scheme);
+  font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
+  scroll-behavior: smooth
+}

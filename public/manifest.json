@@ -1,0 +1,8 @@
+{
+  "short_name": "DGS",
+  "name": "Digital Record Studio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
