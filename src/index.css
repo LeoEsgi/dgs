@@ -10,3 +10,6 @@ html {
   font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
   scroll-behavior: smooth
 }
+a:link {
+  text-decoration: none;
+}

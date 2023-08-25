@@ -1,0 +1,13 @@
+.profilCard {}
+
+.profilCard:hover {
+    cursor: pointer;
+    opacity: 0.65;
+    box-shadow: 1rem;
+
+
+}
+
+.profilCard .card-body {
+    color: black;
+}

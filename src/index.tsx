@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/views/Home';
 import Login from './components/views/Login';
 import Artist from './components/views/Artist';
+import Agenda from './components/views/Agenda';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
           <Route path="artist/:id" element={<Artist />} />
+          <Route path="agenda" element={<Agenda />} />
         </Routes>
       </BrowserRouter>
  

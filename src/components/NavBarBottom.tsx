@@ -7,7 +7,7 @@ function NavBarBottom() {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark" fixed="bottom">
     <Container>
-   
+    <Navbar.Brand href="/">Digital Record</Navbar.Brand>
     </Container>
   </Navbar>
   );

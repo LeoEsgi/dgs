@@ -25,6 +25,9 @@ function LoginForm() {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
+                        <Button variant="primary" type="submit">
+                            Login
+                        </Button>
                     </Form>
                 </Tab>
                 <Tab eventKey="register" title="Register">
@@ -60,7 +63,7 @@ function LoginForm() {
                         </Row>
 
                         <Button variant="primary" type="submit">
-                            Submit
+                            Register
                         </Button>
                     </Form>
                 </Tab>

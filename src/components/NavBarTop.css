@@ -1,3 +1,5 @@
-nav {
+.topBar {
     margin-bottom: 1em;
+    padding-left:12px;
+    padding-right:12px;
 }

@@ -1,26 +1,34 @@
+import './ProfileCard.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Artist from '../interfaces/Artist';
 
-function ProfileCard({ firstName, lastName, imgUri, id }: Artist) {
+function ProfileCard({ firstName, lastName, imgUri, id, description }: Artist) {
+    var title = description;
+    if (description.length > 150) {       
+        description = description.substring(0, 150) + "...";
+    }
+
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={imgUri} />
+
+        <Card className='profilCard' bg='light' style={{ width: '18rem' }}>
+            <Card.Link href={"/artist/" + id}>
+            <Card.Img alt='photo de profil' variant="top" src={imgUri}  />
             <Card.Body>
                 <Card.Title>{firstName} {lastName}</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                <Card.Text title={title}>
+                    {description}
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                <ListGroup.Item>25€/heure</ListGroup.Item>
+                <ListGroup.Item>ProTools</ListGroup.Item>
+                <ListGroup.Item>Paris</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-                <Card.Link href={"/artist/" + id}>View Artist Details</Card.Link>
+                <Card.Link href={"/artist/" + id}>Voir les details de l'artiste</Card.Link>
             </Card.Body>
+            </Card.Link>
         </Card>)
 }
 

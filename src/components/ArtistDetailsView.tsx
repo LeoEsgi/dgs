@@ -14,7 +14,8 @@ function ArtistDetailsView() {
             id: +id ? +id : 0,
             firstName: 'Léo',
             lastName: 'Davière',
-            imgUri: '../assets/profil/photo-profil_test.jpg'
+            imgUri: './../assets/profil/photo-profil_test.jpg',
+            description: "Passionné par l'univers de l'ingénierie du son, je suis rigoureux, prévenant et intuitif. Je possède également une véritable capacité d'analyse et de synthèse. Curieux, réactif, j'ai eu á faire mes preuves en Belgique, en France et maintenant aux États-Unis. Animé d'une volonté quotidienne de m'améliorer, je sais gérer les situations de crise avec sang-froid et j'aime relever des défis."
         }
         return (
             <Container>

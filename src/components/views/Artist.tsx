@@ -2,7 +2,7 @@ import NavBarTop from '../../components/NavBarTop';
 import NavBarBottom from '../../components/NavBarBottom';
 import ArtistDetailsView from '../../components/ArtistDetailsView';
 
-function Home() {
+function Artist() {
     return (
       
             <><NavBarTop /><ArtistDetailsView /><NavBarBottom /></>
@@ -10,4 +10,4 @@ function Home() {
     )
 }
 
-export default Home;   
+export default Artist;   
