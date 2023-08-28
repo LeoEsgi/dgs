@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Button from "react-bootstrap/esm/Button";
+import { loginUser } from "./services/login";
 
 function LoginForm() {
-
     return (
         <Container>
             <Tabs
@@ -16,14 +16,14 @@ function LoginForm() {
                 className="mb-3"
             >
                 <Tab eventKey="login" title="Login">
-                    <Form>
+                    <Form onSubmit={loginUser}>
                         <Form.Group className="mb-3" controlId="formGroupEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Control type="email" name="email" placeholder="Enter email" />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formGroupPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Control type="password" name="password" placeholder="Password" />
                         </Form.Group>
                         <Button variant="primary" type="submit">
                             Login
@@ -72,6 +72,11 @@ function LoginForm() {
         </Container>
     )
 
+  
+
 }
+
+
+
 
 export default LoginForm;   

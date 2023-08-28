@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBarBottom() {
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" fixed="bottom">
+    <Navbar className='bottomBar' expand="lg" bg="dark" data-bs-theme="dark" fixed="bottom">
     <Container>
     <Navbar.Brand href="/">Digital Record</Navbar.Brand>
     </Container>

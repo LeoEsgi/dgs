@@ -7,20 +7,20 @@ import Home from './components/views/Home';
 import Login from './components/views/Login';
 import Artist from './components/views/Artist';
 import Agenda from './components/views/Agenda';
+import LoadingSpinner from './components/LoadingSpinner';
 
 export default function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="artist/:id" element={<Artist />} />
-          <Route path="agenda" element={<Agenda />} />
-        </Routes>
-      </BrowserRouter>
- 
-
+    <><LoadingSpinner /><BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="artist/:id" element={<Artist />} />
+        <Route path="agenda" element={<Agenda />} />
+      </Routes>
+    </BrowserRouter></>
   );
+
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

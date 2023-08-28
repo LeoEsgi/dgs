@@ -1,0 +1,17 @@
+.loading{
+    display: none;
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    width: 100vw;
+    position: absolute;
+   
+    
+}
+
+.spinner-border{
+    width: 20em;
+    height: 20em;
+    z-index: 1; 
+
+}
