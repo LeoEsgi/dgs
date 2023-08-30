@@ -8,6 +8,7 @@ import Login from './components/views/Login';
 import Artist from './components/views/Artist';
 import Agenda from './components/views/Agenda';
 import LoadingSpinner from './components/LoadingSpinner';
+import NotFound from './components/views/NotFound';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="login" element={<Login />} />
         <Route path="artist/:id" element={<Artist />} />
         <Route path="agenda" element={<Agenda />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter></>
   );

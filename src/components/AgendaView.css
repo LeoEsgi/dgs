@@ -1,0 +1,23 @@
+.agendaBlock{
+    height: 80vh;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+
+.dayCalendar{
+    border: 1px ridge black;
+    text-align: center;
+}
+
+.topRow{
+  
+}
+
+.insideRow {
+    height: 5em;
+    border: 1px ridge black;
+}
+
+.hourCol{
+    border: 1px ridge rgb(236, 226, 226);
+}

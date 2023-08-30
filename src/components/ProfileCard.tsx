@@ -2,7 +2,7 @@ import './ProfileCard.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Artist from '../interfaces/Artist';
-
+import Image from 'react-bootstrap/Image';
 function ProfileCard({ firstName, lastName, imgUri, id, description }: Artist) {
     var title = description;
     if (description.length > 150) {       
